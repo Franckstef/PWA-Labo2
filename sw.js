@@ -10,7 +10,7 @@ self.addEventListener('install', function(event) {
             'icones/favicon.ico',
             'icones/avion.png',
             'icones/avionpapier.png',
-            '.cones/icon-192x192.png',
+            'icones/icon-192x192.png',
             'icones/icon-256x256.png',
             'icones/icon-384x384.png',
             'icones/icon-512x512.png',
