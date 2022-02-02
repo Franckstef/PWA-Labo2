@@ -1,5 +1,5 @@
 if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(function(reg) {
+    navigator.serviceWorker.register('sw.js').then(function(reg) {
         // registration worked
         console.log('Yes ! Enregsistrement réussi !. Scope is ' + reg.scope);
     }).catch(function(error) {
@@ -36,7 +36,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 
 function installApp() {
-  console.log('hey');
+  console.log('hey ma fenetre marche!');
   const fenetre = document.getElementById('message')
   const toast = new bootstrap.Toast(fenetre, {delay: 6000}) //reste affichée 6 secondes seulement
   toast.show();
