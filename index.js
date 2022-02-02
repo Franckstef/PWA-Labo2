@@ -10,8 +10,6 @@ if('serviceWorker' in navigator) {
 
 
 // Initialise la variable pour l'utiliser plus tard afin d'afficher une invitation a installer la PWA
-
-
 let deferredPrompt;
  
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -33,7 +31,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 // Fonction qui affiche une fenêtre a l'ouverture de la page pour informer l'utilisateur de la possibilité d'installer cette PWA
 // Possible de faire autrement, mais le toast de bootstrap est assez simple a utiliser
-
 
 function installApp() {
   console.log('hey ma fenetre marche!');

@@ -1,9 +1,9 @@
 {
-    "theme_color": "#B5C1B3",
-    "background_color": "#B5C1B3",
+    "theme_color": "#E5E5E7",
+    "background_color": "#E5E5E7",
     "display": "standalone",
-    "scope": "https://franckstef.github.io/PWA-Labo2/",
-    "start_url": "https://franckstef.github.io/PWA-Labo2/",
+    "scope": "/",
+    "start_url": "/",
     "name": "On the road",
     "short_name": "On the road",
     "description": "Application de voyage",

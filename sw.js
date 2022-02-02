@@ -23,15 +23,24 @@ this.addEventListener('install', function(event) {
     );
   });
 
-  this.addEventListener('fetch', function(event) {
-    event.respondWith(caches.match(event.request).then((response) => {
-        if (response !== undefined) {
-            return response;
-        } else {
-            return fetch(event.request);
-        }
-    }))
- });
+  self.addEventListener('fetch', (event) => {
+    event.respondWith( caches.match(event.request).then((response) => {
+      if (response !== undefined) {
+        return response;
+      } 
+      else {
+        return fetch(event.request).then(function (response) {
+          let responseClone = response.clone();
+  
+          caches.open('v1').then(function (cache) {
+            cache.put(event.request, responseClone);
+          });
+  
+          return response;
+        });
+      }
+    }));
+  });
 
   this.addEventListener('activate', (e) => {
   console.log('Service worker activé, all good !');
