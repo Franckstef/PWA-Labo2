@@ -4,20 +4,20 @@ this.addEventListener('install', function(event) {
       caches.open('v1').then(function(cache) {
         console.log('[Service Worker] Mise en cache globale: app shell et contenu et tout et tout');
         return cache.addAll([
-            '/index.html',
-            '/index.css',
-            '/index.js',
-            '/icones/avionpapier.png',
-            '/icones/icon-192x192.png',
-            '/icones/icon-256x256.png',
-            '/icones/icon-384x384.png',
-            '/icones/icon-512x512.png',
-            '/bootstrap-5.1.3-dist/css/bootstrap.min.css',
-            '/icons-1.7.2/font/bootstrap-icons.css',
-            '/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
-            '/images/IMG_3578.JPG',
-            '/images/IMG_3836.JPG',
-            '/images/IMG_3976.JPG'
+            'index.html',
+            'index.css',
+            'index.js',
+            'icones/avionpapier.png',
+            'icones/icon-192x192.png',
+            'icones/icon-256x256.png',
+            'icones/icon-384x384.png',
+            'icones/icon-512x512.png',
+            'bootstrap-5.1.3-dist/css/bootstrap.min.css',
+            'icons-1.7.2/font/bootstrap-icons.css',
+            'bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
+            'images/IMG_3578.JPG',
+            'images/IMG_3836.JPG',
+            'images/IMG_3976.JPG'
         ]);
       })
     );
